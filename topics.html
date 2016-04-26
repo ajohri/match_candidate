@@ -58,9 +58,9 @@
                 <div class="items col-md-4">
                     <div class="info-block block-info clearfix">
                         <div data-toggle="buttons" class="btn-group btn-group-lg btn-group-justified">
-                            <label class="btn btn-default" value="1" selectedbutton = false>
+                            <label class="btn btn-default" value="1" selectedbutton=false>
                                 <div class="itemcontent">
-                                    <input type="checkbox" id="poverty_button" autocomplete="off" value="1">
+                                    <input type="checkbox" id="poverty_button" autocomplete="off">
                                     <span class="fa fa-car fa-2x"></span>
                                     <h5>Poverty</h5>
                                 </div>
@@ -71,9 +71,9 @@
                 <div class="items col-md-4">
                     <div class="info-block block-info clearfix">
                         <div data-toggle="buttons" class="btn-group btn-group-lg btn-group-justified">
-                            <label class="btn btn-default" value="2" selectedbutton = false>
+                            <label class="btn btn-default" value="2" selectedbutton=false>
                                 <div class="itemcontent">
-                                    <input type="checkbox" id="education_button" autocomplete="off" value="2">
+                                    <input type="checkbox" id="education_button" autocomplete="off">
                                     <span class="fa fa-truck fa-2x"></span>
                                     <h5>Education</h5>
                                 </div>
@@ -84,9 +84,9 @@
                 <div class="items col-md-4">
                     <div class="info-block block-info clearfix">
                         <div data-toggle="buttons" class="btn-group btn-group-lg btn-group-justified">
-                            <label class="btn btn-default" value="3" selectedbutton = false>
+                            <label class="btn btn-default" value="3" selectedbutton=false>
                                 <div class="itemcontent">
-                                    <input type="checkbox" id="abortion_button" autocomplete="off" value="3">
+                                    <input type="checkbox" id="abortion_button" autocomplete="off">
                                     <span class="fa fa-laptop fa-2x"></span>
                                     <h5>Abortion</h5>
                                 </div>
@@ -97,9 +97,9 @@
                 <div class="items col-md-4">
                     <div class="info-block block-info clearfix">
                         <div data-toggle="buttons" class="btn-group btn-group-lg btn-group-justified">
-                            <label class="btn btn-default" value="4" selectedbutton = false>
+                            <label class="btn btn-default" value="4" selectedbutton=false>
                                 <div class="itemcontent">
-                                    <input type="checkbox" id="deathPenalty_button" autocomplete="off" value="4">
+                                    <input type="checkbox" id="deathPenalty_button" autocomplete="off">
                                     <span class="fa fa-cube fa-2x"></span>
                                     <h5>Death Penalty</h5>
                                 </div>
@@ -110,9 +110,9 @@
                 <div class="items col-md-4">
                     <div class="info-block block-info clearfix">
                         <div data-toggle="buttons" class="btn-group btn-group-lg btn-group-justified">
-                            <label class="btn btn-default" value="5" selectedbutton = false>
+                            <label class="btn btn-default" value="5" selectedbutton=false>
                                 <div class="itemcontent">
-                                    <input type="checkbox" id="security_button" autocomplete="off" value="5">
+                                    <input type="checkbox" id="security_button" autocomplete="off">
                                     <span class="fa fa-lock fa-2x"></span>
                                     <h5>Security</h5>
                                 </div>
@@ -123,9 +123,9 @@
                 <div class="items col-md-4">
                     <div class="info-block block-info clearfix">
                         <div data-toggle="buttons" class="btn-group btn-group-lg btn-group-justified">
-                            <label class="btn btn-default" value="6" selectedbutton = false>
+                            <label class="btn btn-default" value="6" selectedbutton=false>
                                 <div class="itemcontent">
-                                    <input type="checkbox" id="healthCare_button" autocomplete="off" value="6">
+                                    <input type="checkbox" id="healthCare_button" autocomplete="off">
                                     <span class="fa fa-barcode fa-2x"></span>
                                     <h5>Health Care</h5>
                                 </div>
@@ -136,9 +136,9 @@
                 <div class="items col-md-4">
                     <div class="info-block block-info clearfix">
                         <div data-toggle="buttons" class="btn-group btn-group-lg btn-group-justified">
-                            <label class="btn btn-default" value="7" selectedbutton = false>
+                            <label class="btn btn-default" value="7" selectedbutton=false>
                                 <div class="itemcontent">
-                                    <input type="checkbox" id="climateChange_button" autocomplete="off" value="7">
+                                    <input type="checkbox" id="climateChange_button" autocomplete="off">
                                     <span class="fa fa-key fa-2x"></span>
                                     <h5>Climate Change</h5>
                                 </div>
@@ -149,9 +149,9 @@
                 <div class="items col-md-4">
                     <div class="info-block block-info clearfix">
                         <div data-toggle="buttons" class="btn-group btn-group-lg btn-group-justified">
-                            <label class="btn btn-default" value="8" selectedbutton = false>
+                            <label class="btn btn-default" value="8" selectedbutton=false>
                                 <div class="itemcontent">
-                                    <input type="checkbox" id="gunControl_button" autocomplete="off" value="8">
+                                    <input type="checkbox" id="gunControl_button" autocomplete="off">
                                     <span class="fa fa-key fa-2x"></span>
                                     <h5>Gun Control</h5>
                                 </div>
@@ -162,9 +162,9 @@
                 <div class="items col-md-4">
                     <div class="info-block block-info clearfix">
                         <div data-toggle="buttons" class="  btn-group btn-group-lg btn-group-justified">
-                            <label class="btn btn-default" value="9" selectedbutton = false>
+                            <label class="btn btn-default" value="9" selectedbutton=false>
                                 <div class="itemcontent">
-                                    <input type="checkbox" id="immigration_button" autocomplete="off" value="9">
+                                    <input type="checkbox" id="immigration_button" autocomplete="off">
                                     <span class="fa fa-keyboard-o fa-2x"></span>
                                     <h5>Immigration</h5>
                                 </div>
@@ -193,11 +193,10 @@
         var selectedbutton = e.target.getAttribute("selectedbutton");
         if (selectedbutton == "false") {
             selectedbutton = "true";
-        }
-        else {
+        } else {
             selectedbutton = "false";
         }
-        e.target.setAttribute("selectedbutton", selectedbutton);    
+        e.target.setAttribute("selectedbutton", selectedbutton);
         // $(this).setAttribute("selected") = true;
         // var selected_button = e.target.getAttribute("selected");
         alert(selectedbutton);
@@ -205,10 +204,17 @@
     });
 
     $("#topics-next-button").click(function(e) {
-        var elementarray = $("label[selectedbutton]=true")
-        elementarray.each(alert(getAttribute("value"))
-            );
-        window.location.href = "importance.html" + "?categories=";
+
+        var nexturl = "importance.html" + "?categories=";
+
+        $('label[selectedbutton]').each(function(e) {
+            if ($(this).attr("selectedbutton") == "true") {              
+                nexturl += ($(this).attr("value")) - 1;
+            }
+        });
+
+        window.location.href = nexturl;
+
     });
     </script>
     <script>
