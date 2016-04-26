@@ -48,7 +48,16 @@
     </nav>
     <div class="container">
         <div class="starter-template">
-            <input id="ex13" type="text" data-slider-ticks="[0, 100, 200, 300, 400]" data-slider-ticks-snap-bounds="30" data-slider-ticks-labels='["$0", "$100", "$200", "$300", "$400"]' />
+            <span id="ex18-label-1" class="hidden">Importance</span>
+            <input id="ex19" type="text"
+             data-provide="slider"
+             data-slider-ticks="[1, 2, 3, 4, 5]"
+             data-slider-ticks-labels='["Least Importance", "", "", "", Most Importance]'
+             data-slider-min="1"
+             data-slider-max="5"
+             data-slider-step="1"
+             data-slider-value="5"
+             data-slider-tooltip="hide" />
         </div>
     </div>
     <!-- /.container -->
@@ -61,7 +70,7 @@
     window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
     </script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/slider.js"></script>
+
 </body>
 
 </html>
