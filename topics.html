@@ -58,7 +58,7 @@
                 <div class="items col-md-4">
                     <div class="info-block block-info clearfix">
                         <div data-toggle="buttons" class="btn-group btn-group-lg btn-group-justified">
-                            <label class="btn btn-default" value="1" selectedbutton = false>>
+                            <label class="btn btn-default" value="1" selectedbutton = false>
                                 <div class="itemcontent">
                                     <input type="checkbox" id="poverty_button" autocomplete="off" value="1">
                                     <span class="fa fa-car fa-2x"></span>
@@ -71,7 +71,7 @@
                 <div class="items col-md-4">
                     <div class="info-block block-info clearfix">
                         <div data-toggle="buttons" class="btn-group btn-group-lg btn-group-justified">
-                            <label class="btn btn-default" value="2" selectedbutton = false>>
+                            <label class="btn btn-default" value="2" selectedbutton = false>
                                 <div class="itemcontent">
                                     <input type="checkbox" id="education_button" autocomplete="off" value="2">
                                     <span class="fa fa-truck fa-2x"></span>
@@ -84,7 +84,7 @@
                 <div class="items col-md-4">
                     <div class="info-block block-info clearfix">
                         <div data-toggle="buttons" class="btn-group btn-group-lg btn-group-justified">
-                            <label class="btn btn-default" value="3" selectedbutton = false>>
+                            <label class="btn btn-default" value="3" selectedbutton = false>
                                 <div class="itemcontent">
                                     <input type="checkbox" id="abortion_button" autocomplete="off" value="3">
                                     <span class="fa fa-laptop fa-2x"></span>
@@ -97,7 +97,7 @@
                 <div class="items col-md-4">
                     <div class="info-block block-info clearfix">
                         <div data-toggle="buttons" class="btn-group btn-group-lg btn-group-justified">
-                            <label class="btn btn-default" value="4" selectedbutton = false>>
+                            <label class="btn btn-default" value="4" selectedbutton = false>
                                 <div class="itemcontent">
                                     <input type="checkbox" id="deathPenalty_button" autocomplete="off" value="4">
                                     <span class="fa fa-cube fa-2x"></span>
@@ -110,7 +110,7 @@
                 <div class="items col-md-4">
                     <div class="info-block block-info clearfix">
                         <div data-toggle="buttons" class="btn-group btn-group-lg btn-group-justified">
-                            <label class="btn btn-default" value="5" selectedbutton = false>>
+                            <label class="btn btn-default" value="5" selectedbutton = false>
                                 <div class="itemcontent">
                                     <input type="checkbox" id="security_button" autocomplete="off" value="5">
                                     <span class="fa fa-lock fa-2x"></span>
@@ -123,7 +123,7 @@
                 <div class="items col-md-4">
                     <div class="info-block block-info clearfix">
                         <div data-toggle="buttons" class="btn-group btn-group-lg btn-group-justified">
-                            <label class="btn btn-default" value="6" selectedbutton = false>>
+                            <label class="btn btn-default" value="6" selectedbutton = false>
                                 <div class="itemcontent">
                                     <input type="checkbox" id="healthCare_button" autocomplete="off" value="6">
                                     <span class="fa fa-barcode fa-2x"></span>
@@ -136,7 +136,7 @@
                 <div class="items col-md-4">
                     <div class="info-block block-info clearfix">
                         <div data-toggle="buttons" class="btn-group btn-group-lg btn-group-justified">
-                            <label class="btn btn-default" value="7" selectedbutton = false>>
+                            <label class="btn btn-default" value="7" selectedbutton = false>
                                 <div class="itemcontent">
                                     <input type="checkbox" id="climateChange_button" autocomplete="off" value="7">
                                     <span class="fa fa-key fa-2x"></span>
@@ -149,7 +149,7 @@
                 <div class="items col-md-4">
                     <div class="info-block block-info clearfix">
                         <div data-toggle="buttons" class="btn-group btn-group-lg btn-group-justified">
-                            <label class="btn btn-default" value="8" selectedbutton = false>>
+                            <label class="btn btn-default" value="8" selectedbutton = false>
                                 <div class="itemcontent">
                                     <input type="checkbox" id="gunControl_button" autocomplete="off" value="8">
                                     <span class="fa fa-key fa-2x"></span>
@@ -188,6 +188,7 @@
         alert("poverty");
     });
 
+    // Just doing a ! toggle didn't work as well for some reason, hence the long way
     $("label.btn").click(function(e) {
         var selectedbutton = e.target.getAttribute("selectedbutton");
         if (selectedbutton == "false") {
