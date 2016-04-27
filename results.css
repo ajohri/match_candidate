@@ -1,0 +1,48 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+#candidate-1 p {
+    font-size: 400%;
+}
+
+.navbar-header {
+    text-align: center;
+}
+
+.navbar-header h3 {
+    color: white;
+    text-align: center;
+    float: none;
+}
+
+#twitterbootstrap .navbar-inner {
+    text-align: center;
+}
+
+.nav-tabs > li,
+.nav-pills > li {
+    float: none;
+    display: inline-block;
+}
+
+.nav-tabs,
+.nav-pills {
+    text-align: center;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+#navbar img {
+	max-width: 3%;
+	max-height: 3%;
+}
+
+/*#first-place-losers p {
+	font-size: 39px;
+}*/
