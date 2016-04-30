@@ -12,18 +12,18 @@ var categories = getParameterByName('abortion');
 
 $(document).ready(function() {
 
-    json_loc = 'https://github.com/gregchang/match_candidate/blob/gh-pages/questions_list.json'
+    json_loc = 'https://rawgit.com/gregchang/match_candidate/gh-pages/questions_list.json'
 
-    $.getJSON(json_loc, function(data) {
-        alert(data);
-    });
-
-    // $.ajax({
-    //     dataType: "jsonp",
-    //     url: json_loc,
-    // }).done(function(data) {
-    //     alert("lol");
+    // $.getJSON(json_loc, function(data) {
+    //     alert(data);
     // });
+
+    $.ajax({
+        dataType: "jsonp",
+        url: json_loc,
+    }).done(function(data) {
+        alert("lol");
+    });
 
     if (categories != null) {
 
