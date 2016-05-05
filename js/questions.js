@@ -12,19 +12,19 @@ var categories = getParameterByName('abortion');
 
 $(document).ready(function() {
 
-    json_loc = 'https://rawgit.com/gregchang/match_candidate/gh-pages/questions_list.json'
 
-    // $.getJSON(json_loc, function(data) {
-    //     alert(data);
-    // });
+    var questions = qlist["questions_list"];
 
-    $.ajax({
-        dataType: "jsonp",
-        url: json_loc,
-    }).done(function(data) {
-        alert("lol");
-    });
+    for (var i = 0; i < questions.length; i++) {
+        // $("h2").after("<div><input id='ex19' type='text' data-provide='slider' data-slider-ticks='[1, 2, 3, 4, 5]'' data-slider-ticks-labels='['Least Importance', ' ', ' ', ' ', Most Importance]' data-slider-min='1' data-slider-max='5' data-slider-step='1' data-slider-value='5' data-slider-tooltip='hide' /></div>");
+       //     }
+        if (questions[i]["qtopic"] == "abortion") {
 
+            $("#questions_abortion").after("<input id=\"ex19\" type=\"text\" data-provide=\"slider\" data-slider-ticks=\"[1, 2, 3, 4, 5]\" data-slider-min=\"1\" data-slider-max=\"5\" data-slider-step=\"1\" data-slider-value=\"5\" data-slider-tooltip=\"hide\"></input>");
+        }
+        //$("#topic_poverty").after('<input id="ex19" type="text" data - provide = "slider" data - slider - ticks = "[1, 2, 3, 4, 5]" data - slider - min = "1"data - slider - max = "5"data - slider - step = "1" data - slider - value = "5" data - slider - tooltip = "hide" / > ');
+        //alert(qlist["questions_list"][0]["question"]);
+    }
     if (categories != null) {
 
         var i;
