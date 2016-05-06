@@ -10,7 +10,7 @@ function getParameterByName(name, url) {
 
 var categories = getParameterByName('categories');
 
-
+var param_array = [];
 
 $(document).ready(function() {
 
@@ -70,7 +70,7 @@ $(document).ready(function() {
         $("#topic_immigration").remove();
     }
 
-$("#main-questions-container h2").next().hide();
+    $("#main-questions-container h2").next().hide();
 
     $("#main-questions-container h2").click(function() {
         $(this).find(".glyphicon").toggleClass('glyphicon-plus');
@@ -159,14 +159,23 @@ $("#main-questions-container h2").next().hide();
         }
     }
 
+
     $("#next-button").click(function(e) {
 
         var nexturl = "results.html" + "?" + "answers=";
 
+        param_array[0] = $("input").size();
 
         $(".questions_slider").each(function(index, el) {
-            alert($(this).attr("qid"));
+
+            param_array[$(this).attr("qid")] = $(this).attr("value");
+
         });
+
+
+        sessionStorage.setItem('myArray', param_array);
+
+
         // if (categories != null) {
 
         //     var i;
