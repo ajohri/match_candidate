@@ -58,7 +58,7 @@
                 </div>
                 <div class="col-md-6">
                     <span id="ex18-label-1" class="hidden">Importance</span>
-                    <input id="ex11" type="text"
+                    <input id="10" type="text" name="poverty"
                     data-provide="slider"
                     data-slider-ticks="[1, 2, 3, 4, 5]"
                     data-slider-ticks-labels='["Least Importance", " ", " ", " ", Most Importance]'
@@ -75,7 +75,7 @@
                 </div>
                 <div class="col-md-6">
                     <span id="ex18-label-1" class="hidden">Importance</span>
-                    <input id="ex12" type="text"
+                    <input id="11" type="text" name="education"
                            data-provide="slider"
                            data-slider-ticks="[1, 2, 3, 4, 5]"
                            data-slider-ticks-labels='["Least Importance", " ", " ", " ", Most Importance]'
@@ -92,7 +92,7 @@
                 </div>
                 <div class="col-md-6">
                     <span id="ex18-label-1" class="hidden">Importance</span>
-                    <input id="ex13" type="text"
+                    <input id="12" type="text" name="abortion"
                            data-provide="slider"
                            data-slider-ticks="[1, 2, 3, 4, 5]"
                            data-slider-ticks-labels='["Least Importance", " ", " ", " ", Most Importance]'
@@ -109,7 +109,7 @@
                 </div>
                 <div class="col-md-6">
                     <span id="ex18-label-1" class="hidden">Importance</span>
-                    <input id="ex14" type="text"
+                    <input id="13" type="text" name="dealth"
                            data-provide="slider"
                            data-slider-ticks="[1, 2, 3, 4, 5]"
                            data-slider-ticks-labels='["Least Importance", " ", " ", " ", Most Importance]'
@@ -126,7 +126,7 @@
                 </div>
                 <div class="col-md-6">
                     <span id="ex18-label-1" class="hidden">Importance</span>
-                    <input id="ex15" type="text"
+                    <input id="14" type="text" name="security"
                            data-provide="slider"
                            data-slider-ticks="[1, 2, 3, 4, 5]"
                            data-slider-ticks-labels='["Least Importance", " ", " ", " ", Most Importance]'
@@ -143,7 +143,7 @@
                 </div>
                 <div class="col-md-6">
                     <span id="ex18-label-1" class="hidden">Importance</span>
-                    <input id="ex16" type="text"
+                    <input id="15" type="text" name="health"
                            data-provide="slider"
                            data-slider-ticks="[1, 2, 3, 4, 5]"
                            data-slider-ticks-labels='["Least Importance", " ", " ", " ", Most Importance]'
@@ -160,7 +160,7 @@
                 </div>
                 <div class="col-md-6">
                     <span id="ex18-label-1" class="hidden">Importance</span>
-                    <input id="ex17" type="text"
+                    <input id="16" type="text" name="climate"
                            data-provide="slider"
                            data-slider-ticks="[1, 2, 3, 4, 5]"
                            data-slider-ticks-labels='["Least Importance", " ", " ", " ", Most Importance]'
@@ -177,7 +177,7 @@
                 </div>
                 <div class="col-md-6">
                     <span id="ex18-label-1" class="hidden">Importance</span>
-                    <input id="ex18" type="text"
+                    <input id="17" type="text" name="immigration"
                            data-provide="slider"
                            data-slider-ticks="[1, 2, 3, 4, 5]"
                            data-slider-ticks-labels='["Least Importance", " ", " ", " ", Most Importance]'
@@ -194,7 +194,7 @@
                 </div>
                 <div class="col-md-6">
                     <span id="ex18-label-1" class="hidden">Importance</span>
-                    <input id="ex19" type="text"
+                    <input id="18" type="text" name="gun"
                            data-provide="slider"
                            data-slider-ticks="[1, 2, 3, 4, 5]"
                            data-slider-ticks-labels='["Least Importance", " ", " ", " ", Most Importance]'
@@ -206,7 +206,7 @@
                 </div>
             </div>
 
-            <a href="questions.html" id="questions-next-button" class="btn btn-info" role="button" style="position: absolute; left: 20%; right: 20%; bottom: 5%;">Next</a>
+            <a href="#" id="questions-next-button" class="btn btn-info" role="button" style="position: absolute; left: 20%; right: 20%; bottom: 5%;">Next</a>
 
                 
 
@@ -252,24 +252,42 @@
                 }
             }
         });
-       $("#questions-next-button").click(function(e) {
+
+             $("#questions-next-button").click(function(e) {
 
         var nexturl = "questions.html" + "?categories=";
 
-       $('.slider').each(function(e) {
+       // $('.slider').each(function(e) {
                 
-              nexturl += $('#ex19').slider('getValue') ;
+       //        nexturl += " hello " + $('#ex19').slider('getValue') ;
+
+            if (categories != null) {
+
+                var i;
+                for (i = 0; i < 9; i++) {
+                    if (categories.indexOf(i) >= 0)
+                        nexturl += document.getElementById(i+10).name + "=" + document.getElementById(i+10).value;
+                }
+            } else {
+                var i;
+                for (i = 0; i < 9; i++) {
+                       nexturl += document.getElementById(i+10).name + "=" +document.getElementById(i+10).value;
+                }
+            }
             
-        });
+        
+    
         window.location.href = nexturl;
 
     });
+
       $('.slider').slider.on('change', function(ev){
 
             $('.slider').slider('setValue', ev.value); 
 
       })
 
+  
 
     //    alert( e.target.setAttribute("data-slider-value", $(".slider").getValue());
 
