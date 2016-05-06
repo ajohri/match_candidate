@@ -109,7 +109,7 @@
                 </div>
                 <div class="col-md-6">
                     <span id="ex18-label-1" class="hidden">Importance</span>
-                    <input id="13" type="text" name="dealth"
+                    <input id="13" type="text" name="death"
                            data-provide="slider"
                            data-slider-ticks="[1, 2, 3, 4, 5]"
                            data-slider-ticks-labels='["Least Importance", " ", " ", " ", Most Importance]'
@@ -194,7 +194,7 @@
                 </div>
                 <div class="col-md-6">
                     <span id="ex18-label-1" class="hidden">Importance</span>
-                    <input id="18" type="text" name="gun"
+                    <input id="18" type="text" name="guncontrol"
                            data-provide="slider"
                            data-slider-ticks="[1, 2, 3, 4, 5]"
                            data-slider-ticks-labels='["Least Importance", " ", " ", " ", Most Importance]'
@@ -255,18 +255,20 @@
 
              $("#questions-next-button").click(function(e) {
 
-        var nexturl = "questions.html" + "?categories=";
+        var nexturl = "questions.html" + "?";
 
        // $('.slider').each(function(e) {
                 
        //        nexturl += " hello " + $('#ex19').slider('getValue') ;
+
+       // var first_param;
 
             if (categories != null) {
 
                 var i;
                 for (i = 0; i < 9; i++) {
                     if (categories.indexOf(i) >= 0)
-                        nexturl += document.getElementById(i+10).name + "=" + document.getElementById(i+10).value;
+                        nexturl += "&" + document.getElementById(i+10).name + "=" + document.getElementById(i+10).value;
                 }
             } else {
                 var i;
@@ -281,11 +283,11 @@
 
     });
 
-      $('.slider').slider.on('change', function(ev){
+      // $('.slider').slider.on('change', function(ev){
 
-            $('.slider').slider('setValue', ev.value); 
+      //       $('.slider').slider('setValue', ev.value); 
 
-      })
+      // })
 
   
 
