@@ -20,12 +20,22 @@ body {
     padding-right: 50%;
 }
 
-#main-questions-container div p{
-	font-size: large;
+#main-questions-container div p {
+    font-size: large;
 }
 
+<<<<<<< HEAD
 }
 =======
 #main-questions-container div div {
 	/*display: none;*/
+=======
+#main_page {
+    background: url(images/background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100% 90%;
+>>>>>>> origin/gh-pages
 }
+
