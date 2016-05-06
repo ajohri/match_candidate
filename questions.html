@@ -25,48 +25,113 @@
 </head>
 
 <body>
+    <h1 align="center">Please answer these questions!</h1>
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </button>
-                <!-- <a class="navbar-brand" href="#">Project name</a> -->
+                </button> -->
+                <a class="navbar-brand" href="index.html">Who's Your President</a>
             </div>
-            <div id="navbar" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+            <div id="navbar" class="collapse navbar-collapse navbar-right">
             </div>
             <!--/.nav-collapse -->
         </div>
     </nav>
-    <div class="container">
-            <div>
-            <p id="q1">
-            Q1
+    <div id="main-questions-container" class="container">
+        <div>
+            <p id="topic_poverty">
+                <h2>Poverty <a href="#"><small><span class="glyphicon glyphicon-plus"></span></small></a></h2>
+                <div>
+                    <p id="questions_poverty" class="col-md-8"></p>
+                    <p id="slider_poverty" class="col-md-4"></p>
+                </div>
             </p>
-            <a href="importance.html" class="btn btn-info" role="button" style="position: absolute; left: 20%; right: 20%; bottom: 5%;">Next</a>
-            </div>
+            <p id="topic_education">
+                <br>
+                <h2>Education <a href="#"><small><span class="glyphicon glyphicon-plus"></span></small></a></h2>
+                <div>
+                    <p id="questions_education" class="col-md-8"></p>
+                    <p id="slider_education" class="col-md-4"></p>
+                </div>
+            </p>
+            <p id="topic_abortion">
+                <br>
+                <h2>Abortion <a href="#"><small><span class="glyphicon glyphicon-plus"></span></small></a></h2>
+                <div>
+                    <p id="questions_abortion" class="col-md-8"></p>
+                    <p id="slider_abortion" class="col-md-4"></p>
+                </div>
+            </p>
+            <p id="topic_deathpenalty">
+                <br>
+                <h2>Death Penalty <a href="#"><small><span class="glyphicon glyphicon-plus"></span></small></a></h2>
+                <div>
+                    <p id="questions_deathpenalty" class="col-md-8"></p>
+                    <p id="slider_deathpenalty" class="col-md-4"></p>
+                </div>
+            </p>
+            <p id="topic_security">
+                <br>
+                <h2>Security <a href="#"><small><span class="glyphicon glyphicon-plus"></span></small></a></h2>
+                <div>
+                    <p id="questions_security" class="col-md-8"></p>
+                    <p id="slider_security" class="col-md-4"></p>
+                </div>
+            </p>
+            <p id="topic_healthcare">
+                <br>
+                <h2>Health care <a href="#"><small><span class="glyphicon glyphicon-plus"></span></small></a></h2>
+                <div>
+                    <p id="questions_healthcare" class="col-md-8"></p>
+                    <p id="slider_healthcare" class="col-md-4"></p>
+                </div>
+            </p>
+            <p id="topic_climatechange">
+                <br>
+                <h2>Climate change <a href="#"><small><span class="glyphicon glyphicon-plus"></span></small></a></h2>
+                <div>
+                    <p id="questions_climatechange" class="col-md-8"></p>
+                    <p id="slider_climatechange" class="col-md-4"></p>
+                </div>
+            </p>
+            <p id="topic_guncontrol">
+                <br>
+                <h2>Gun control <a href="#"><small><span class="glyphicon glyphicon-plus"></span></small></a></h2>
+                <div>
+                    <p id="questions_guncontrol" class="col-md-8"></p>
+                    <p id="slider_guncontrol" class="col-md-4"></p>
+                </div>
+            </p>
+            <p id="topic_immigration">
+                <br>
+                <h2>Immigration <a href="#"><small><span class="glyphicon glyphicon-plus"></span></small></a></h2>
+                <div>
+                    <p id="questions_immigration" class="col-md-8"></p>
+                    <p id="slider_immigration" class="col-md-4"></p>
+                </div>
+            </p>
+        </div>
+        <br>
+        <p id="next-button"><a href="results.html" class="btn btn-info" role="button">Next</a></p>
     </div>
     <!-- /.container -->
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/questions.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/7.0.0/bootstrap-slider.min.js"></script>
     <script>
     window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
     </script>
+    <script src="questions_list.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- <script type="text/javascript" language="javascript" src="questions_list.json"></script>  -->
-    <script src="js/questions.js"></script>
-
 </body>
 
 </html>
