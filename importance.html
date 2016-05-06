@@ -209,7 +209,7 @@
                            data-slider-tooltip="hide" />
                 </div>
             </div>
-            <a href="importance.html" class="btn btn-info" role="button" style="position: absolute; left: 20%; right: 20%; bottom: 5%;">Next</a>
+            <a id="questions-next-button" href="#" class="btn btn-info" role="button" style="position: absolute; left: 20%; right: 20%; bottom: 5%;">Next</a>
         </div>
     </div>
     <!-- /.container -->
@@ -248,10 +248,27 @@
             } else {
                 var i;
                 for (i = 0; i < 9; i++) {
-                        document.getElementById(i).style.display = "inline";
+                       document.getElementById(i).style.display = "inline";
                 }
             }
         });
+       $("#questions-next-button").click(function(e) {
+
+        var nexturl = "questions.html" + "?categories=";
+
+        $('input').each(function(e) {
+                
+                nexturl += ($(this).getAttribute("value")) ;
+            
+        });
+        window.location.href = nexturl;
+
+    });
+
+    //    alert( e.target.setAttribute("data-slider-value", $(".slider").getValue());
+
+
+
     </script>
 
 
