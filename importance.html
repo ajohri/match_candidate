@@ -58,7 +58,7 @@
                 </div>
                 <div class="col-md-6">
                     <span id="ex18-label-1" class="hidden">Importance</span>
-                    <input id="ex19" type="text"
+                    <input id="ex11" type="text"
                     data-provide="slider"
                     data-slider-ticks="[1, 2, 3, 4, 5]"
                     data-slider-ticks-labels='["Least Importance", " ", " ", " ", Most Importance]'
@@ -75,7 +75,7 @@
                 </div>
                 <div class="col-md-6">
                     <span id="ex18-label-1" class="hidden">Importance</span>
-                    <input id="ex19" type="text"
+                    <input id="ex12" type="text"
                            data-provide="slider"
                            data-slider-ticks="[1, 2, 3, 4, 5]"
                            data-slider-ticks-labels='["Least Importance", " ", " ", " ", Most Importance]'
@@ -92,7 +92,7 @@
                 </div>
                 <div class="col-md-6">
                     <span id="ex18-label-1" class="hidden">Importance</span>
-                    <input id="ex19" type="text"
+                    <input id="ex13" type="text"
                            data-provide="slider"
                            data-slider-ticks="[1, 2, 3, 4, 5]"
                            data-slider-ticks-labels='["Least Importance", " ", " ", " ", Most Importance]'
@@ -109,7 +109,7 @@
                 </div>
                 <div class="col-md-6">
                     <span id="ex18-label-1" class="hidden">Importance</span>
-                    <input id="ex19" type="text"
+                    <input id="ex14" type="text"
                            data-provide="slider"
                            data-slider-ticks="[1, 2, 3, 4, 5]"
                            data-slider-ticks-labels='["Least Importance", " ", " ", " ", Most Importance]'
@@ -126,7 +126,7 @@
                 </div>
                 <div class="col-md-6">
                     <span id="ex18-label-1" class="hidden">Importance</span>
-                    <input id="ex19" type="text"
+                    <input id="ex15" type="text"
                            data-provide="slider"
                            data-slider-ticks="[1, 2, 3, 4, 5]"
                            data-slider-ticks-labels='["Least Importance", " ", " ", " ", Most Importance]'
@@ -143,7 +143,7 @@
                 </div>
                 <div class="col-md-6">
                     <span id="ex18-label-1" class="hidden">Importance</span>
-                    <input id="ex19" type="text"
+                    <input id="ex16" type="text"
                            data-provide="slider"
                            data-slider-ticks="[1, 2, 3, 4, 5]"
                            data-slider-ticks-labels='["Least Importance", " ", " ", " ", Most Importance]'
@@ -160,7 +160,7 @@
                 </div>
                 <div class="col-md-6">
                     <span id="ex18-label-1" class="hidden">Importance</span>
-                    <input id="ex19" type="text"
+                    <input id="ex17" type="text"
                            data-provide="slider"
                            data-slider-ticks="[1, 2, 3, 4, 5]"
                            data-slider-ticks-labels='["Least Importance", " ", " ", " ", Most Importance]'
@@ -177,7 +177,7 @@
                 </div>
                 <div class="col-md-6">
                     <span id="ex18-label-1" class="hidden">Importance</span>
-                    <input id="ex19" type="text"
+                    <input id="ex18" type="text"
                            data-provide="slider"
                            data-slider-ticks="[1, 2, 3, 4, 5]"
                            data-slider-ticks-labels='["Least Importance", " ", " ", " ", Most Importance]'
@@ -256,14 +256,20 @@
 
         var nexturl = "questions.html" + "?categories=";
 
-        $('input').each(function(e) {
+       $('.slider').each(function(e) {
                 
-                nexturl += ($(this).getAttribute("value")) ;
+              nexturl += $('#ex19').slider('getValue') ;
             
         });
         window.location.href = nexturl;
 
     });
+      $('.slider').slider.on('change', function(ev){
+
+            $('.slider').slider('setValue', ev.value); 
+
+      })
+
 
     //    alert( e.target.setAttribute("data-slider-value", $(".slider").getValue());
 
