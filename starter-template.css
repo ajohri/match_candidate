@@ -24,6 +24,17 @@ body {
 	font-size: large;
 }
 
+<<<<<<< HEAD
+html { 
+  background: url(images/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+}
+=======
 #main-questions-container div div {
 	/*display: none;*/
 }
+>>>>>>> origin/gh-pages
