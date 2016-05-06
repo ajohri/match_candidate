@@ -22,10 +22,19 @@ $(document).ready(function() {
     var answer_array = sessionStorage.getItem('myArray');
     //alert(answer_array);
 
+    var poverty_num = -1;
+    var education_num = -1;
+    var abortion_num;
+    var deathpenalty_num;
+    var security_num;
+    var healthcare_num;
+    var climatechange_num;
+    var immigration_num;
+    var guncontrol_num;
 
     for (var i = 1; i < 36; i++) {
         if(answer_array[i] != null) {
-            
+
         }
     }
 
