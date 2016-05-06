@@ -1,11 +1,29 @@
 body {
-  padding-top: 50px;
+    padding-top: 50px;
 }
+
 .starter-template {
-  padding: 40px 15px;
-  text-align: center;
+    padding: 40px 15px;
+    text-align: center;
 }
 
 #start-button {
-	font-size: medium;
+    font-size: medium;
+}
+
+#next-button {
+    text-align: center;
+}
+
+#next-button a {
+    padding-left: 50%;
+    padding-right: 50%;
+}
+
+#main-questions-container div p{
+	font-size: large;
+}
+
+#main-questions-container div div {
+	/*display: none;*/
 }
