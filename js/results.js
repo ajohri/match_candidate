@@ -22,6 +22,13 @@ $(document).ready(function() {
     var answer_array = sessionStorage.getItem('myArray');
     //alert(answer_array);
 
+    //Colbert overall percetage
+    var overall_num1 = -1;
+
+    //Santorum overall percentage
+    var overall_num2 = -1;
+
+    //Issue percentages
     var poverty_num1 = -1;
     var education_num1 = -1;
     var abortion_num1 = -1;
