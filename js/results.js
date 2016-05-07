@@ -49,6 +49,13 @@ $(document).ready(function() {
     var immigration_num2 = -1;
     var guncontrol_num2 = -1;
 
+    // if (overall_num1 == overall_num2) {
+    //     $("#colbert").hide();
+    //     $("#colbert").show();
+    // }
+
+
+
     for (var i = 1; i < 36; i++) {
         if(answer_array[i] != null) {
 
