@@ -61,35 +61,7 @@ $(document).ready(function() {
     var issue_match_percent_colbert = 0;
     var issue_match_percent_santorum = 0;
     
-    var oliver = 0;
-    var jfk = 0;
-     if (overall_num1 < overall_num2) {
-         $("#colbert_wins").hide();
-         $("#santorum_loses").hide();
-         oliver = overall_num1 + 5;
-         jfk = overall_num2 - 10;
-    }
-
-    if (overall_num1 >  overall_num2) {
-        $("#santorum_wins").hide();
-        $("#colbert_loses").hide();
-        oliver = overall_num1 - 10;
-        jfk = overall_num2 + 5;
-   }
-
-   document.getElementById('colbert_percentage').innerHTML=overall_num1 + "%";
-   document.getElementById('colbert_percentage2').innerHTML=overall_num1 + "%";
-   document.getElementById('santorum_percentage').innerHTML=overall_num2 + "%";
-   document.getElementById('santorum_percentage2').innerHTML=overall_num2 + "%";
-   document.getElementById('oliver_percentage').innerHTML=oliver + "%";
-   document.getElementById('oliver_percentage2').innerHTML=oliver + "%";
-   document.getElementById('jfk_percentage').innerHTML=jfk + "%";
-   document.getElementById('jfk_percentage2').innerHTML=jfk + "%";
-
-    // for (var i=0; i<answer_array.length; i++) {
-    //     alert(answer_array[i]);
-    // }
-
+    //Start Calc %
 
     for (var i = 2; i <= 72; i += 2) {
         if (answer_array[i] != null && answer_array[i] >= 1 && answer_array[i] <= 5) {
@@ -185,10 +157,39 @@ $(document).ready(function() {
     colbert_results.push(overall_num1)
     santorum_results.push(overall_num2)
 
-
     //answer_array = sessionStorage.getItem('myArray');
     sessionStorage.setItem('colbert_results', colbert_results);
     sessionStorage.setItem('santorum_results', santorum_results);
+
+    //End calc %
+
+
+    var oliver = 0;
+    var jfk = 0;
+     if (overall_num1 < overall_num2) {
+         $("#colbert_wins").hide();
+         $("#santorum_loses").hide();
+         oliver = overall_num1 + 5;
+         jfk = overall_num2 - 10;
+    }
+
+    if (overall_num1 >  overall_num2) {
+        $("#santorum_wins").hide();
+        $("#colbert_loses").hide();
+        oliver = overall_num1 - 10;
+        jfk = overall_num2 + 5;
+   }
+
+   document.getElementById('colbert_percentage').innerHTML=overall_num1 + "%";
+   document.getElementById('colbert_percentage2').innerHTML=overall_num1 + "%";
+   document.getElementById('santorum_percentage').innerHTML=overall_num2 + "%";
+   document.getElementById('santorum_percentage2').innerHTML=overall_num2 + "%";
+   document.getElementById('oliver_percentage').innerHTML=oliver + "%";
+   document.getElementById('oliver_percentage2').innerHTML=oliver + "%";
+   document.getElementById('jfk_percentage').innerHTML=jfk + "%";
+   document.getElementById('jfk_percentage2').innerHTML=jfk + "%";
+
+
 
 
 });
