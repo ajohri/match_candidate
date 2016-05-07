@@ -23,10 +23,10 @@ $(document).ready(function() {
     //alert(answer_array);
 
     //Colbert overall percetage
-    var overall_num1 = 25;
+    var overall_num1 = 92;
 
     //Santorum overall percentage
-    var overall_num2 = 73;
+    var overall_num2 = 21;
 
     //Issue percentages
     var poverty_num1 = -1;
