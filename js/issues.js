@@ -8,6 +8,7 @@ $(document).ready(function() {
     colbert_results = colbert_results.split(',');
     santorum_results = santorum_results.split(',');
 
+
     //alert(answer_array);
 
     //Colbert overall percetage
@@ -43,23 +44,23 @@ $(document).ready(function() {
     var rick = " - Rick Santorum";
     var i;
     // setting percentage 
-    document.getElementById(0).innnerHTML = (poverty_num1 > poverty_num2) ? poverty_num1 : poverty_num2 + "%";
-    document.getElementById(1).innnerHTML = (education_num1 > education_num2) ? education_num1 : education_num2 + "%";
-    document.getElementById(2).innnerHTML = (abortion_num1 > abortion_num2) ? abortion_num1 : abortion_num2 + "%";
-    document.getElementById(3).innnerHTML = (deathpenalty_num1 > deathpenalty_num2) ? deathpenalty_num1 : deathpenalty_num2 + "%";
-    document.getElementById(4).innnerHTML = (security_num1 > security_num2) ? security_num1 : security_num2 + "%";
-    document.getElementById(5).innnerHTML = (healthcare_num1 > healthcare_num2) ? healthcare_num1 : healthcare_num2 + "%";
-    document.getElementById(6).innnerHTML = (climatechange_num1 > climatechange_num2) ? climatechange_num1 : climatechange_num2 + "%";
-    document.getElementById(7).innnerHTML = (immigration_num1 > immigration_num2) ? immigration_num1 : immigration_num2 + "%";
-    document.getElementById(8).innnerHTML = (guncontrol_num1 > guncontrol_num2) ? guncontrol_num1 : guncontrol_num2 + "%";
+    document.getElementById("0").innerHTML = (poverty_num1 > poverty_num2) ? poverty_num1 : poverty_num2 + "%";
+    document.getElementById("1").innerHTML = (education_num1 > education_num2) ? education_num1 : education_num2 + "%";
+    document.getElementById("2").innerHTML = (abortion_num1 > abortion_num2) ? abortion_num1 : abortion_num2 + "%";
+    document.getElementById("3").innerHTML = (deathpenalty_num1 > deathpenalty_num2) ? deathpenalty_num1 : deathpenalty_num2 + "%";
+    document.getElementById("4").innerHTML = (security_num1 > security_num2) ? security_num1 : security_num2 + "%";
+    document.getElementById("5").innerHTML = (healthcare_num1 > healthcare_num2) ? healthcare_num1 : healthcare_num2 + "%";
+    document.getElementById("6").innerHTML = (climatechange_num1 > climatechange_num2) ? climatechange_num1 : climatechange_num2 + "%";
+    document.getElementById("7").innerHTML = (immigration_num1 > immigration_num2) ? immigration_num1 : immigration_num2 + "%";
+    document.getElementById("8").innerHTML = (guncontrol_num1 > guncontrol_num2) ? guncontrol_num1 : guncontrol_num2 + "%";
     // setting name 
-    document.getElementById(10).innnerHTML += (poverty_num1 > poverty_num2) ? step : rick;
-    document.getElementById(11).innnerHTML += (education_num1 > education_num2) ? step : rick;
-    document.getElementById(12).innnerHTML += (abortion_num1 > abortion_num2) ? step : rick;
-    document.getElementById(13).innnerHTML += (deathpenalty_num1 > deathpenalty_num2) ? step : rick;
-    document.getElementById(14).innnerHTML += (security_num1 > security_num2) ? step : rick;
-    document.getElementById(15).innnerHTML += (healthcare_num1 > healthcare_num2) ? step : rick;
-    document.getElementById(16).innnerHTML += (climatechange_num1 > climatechange_num2) ? step : rick;
-    document.getElementById(17).innnerHTML += (immigration_num1 > immigration_num2) ? step : rick;
-    document.getElementById(18).innnerHTML += (guncontrol_num1 > guncontrol_num2) ? step : rick;
+    document.getElementById("10").innerHTML += (poverty_num1 > poverty_num2) ? step : rick;
+    document.getElementById("11").innerHTML += (education_num1 > education_num2) ? step : rick;
+    document.getElementById("12").innerHTML += (abortion_num1 > abortion_num2) ? step : rick;
+    document.getElementById("13").innerHTML += (deathpenalty_num1 > deathpenalty_num2) ? step : rick;
+    document.getElementById("14").innerHTML += (security_num1 > security_num2) ? step : rick;
+    document.getElementById("15").innerHTML += (healthcare_num1 > healthcare_num2) ? step : rick;
+    document.getElementById("16").innerHTML += (climatechange_num1 > climatechange_num2) ? step : rick;
+    document.getElementById("17").innerHTML += (immigration_num1 > immigration_num2) ? step : rick;
+    document.getElementById("18").innerHTML += (guncontrol_num1 > guncontrol_num2) ? step : rick;
 });
