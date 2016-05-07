@@ -23,10 +23,10 @@ $(document).ready(function() {
     //alert(answer_array);
 
     //Colbert overall percetage
-    var overall_num1 = 1;
+    var overall_num1 = 73;
 
     //Santorum overall percentage
-    var overall_num2 = -1;
+    var overall_num2 = 25;
 
     //Issue percentages
     var poverty_num1 = -1;
@@ -49,15 +49,28 @@ $(document).ready(function() {
     var immigration_num2 = -1;
     var guncontrol_num2 = -1;
 
+    var oliver = 0;
+    var jfk = 0;
      if (overall_num1 < overall_num2) {
          $("#colbert_wins").hide();
          $("#santorum_loses").hide();
+         oliver = overall_num1 + 5;
+         jfk = overall_num2 - 10;
     }
 
-    if (overall_num1 > overall_num2) {
+    if (overall_num1 >  overall_num2) {
         $("#santorum_wins").hide();
         $("#colbert_loses").hide();
+        oliver = overall_num1 - 10;
+        jfk = overall_num2 + 5;
    }
+
+   document.getElementById('colbert_percentage').innerHTML=overall_num1 + "%";
+   document.getElementById('colbert_percentage2').innerHTML=overall_num1 + "%";
+   document.getElementById('santorum_percentage').innerHTML=overall_num2 + "%";
+   document.getElementById('santorum_percentage2').innerHTML=overall_num2 + "%";
+   document.getElementById('oliver_percentage').innerHTML=oliver + "%";
+   document.getElementById('jfk_percentage').innerHTML=jfk + "%";
 
     for (var i = 1; i < 36; i++) {
         if(answer_array[i] != null) {
