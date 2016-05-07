@@ -38,7 +38,7 @@ $(document).ready(function() {
     var climatechange_num1 = -1;
     var immigration_num1 = -1;
     var guncontrol_num1 = -1;
-    
+
     var poverty_num2 = -1;
     var education_num2 = -1;
     var abortion_num2 = -1;
@@ -49,12 +49,15 @@ $(document).ready(function() {
     var immigration_num2 = -1;
     var guncontrol_num2 = -1;
 
-    // if (overall_num1 == overall_num2) {
-    //     $("#colbert").hide();
-    //     $("#colbert").show();
-    // }
+     if (overall_num1 > overall_num2) {
+         $("#colbert_wins").hide();
+         $("#santorum_loses").hide();
+    }
 
-
+    if (overall_num1 < overall_num2) {
+        $("#santorum_wins").hide();
+        $("#colbert_loses").hide();
+   }
 
     for (var i = 1; i < 36; i++) {
         if(answer_array[i] != null) {
