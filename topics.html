@@ -43,7 +43,6 @@
                 <a class="navbar-brand" href="index.html">Who's Your President</a>
             </div>
             <div id="navbar" class="collapse navbar-collapse navbar-right">
-                
             </div>
             <!--/.nav-collapse -->
         </div>
@@ -193,10 +192,18 @@
             selectedbutton = "false";
         }
         e.target.setAttribute("selectedbutton", selectedbutton);
-        // $(this).setAttribute("selected") = true;
-        // var selected_button = e.target.getAttribute("selected");
-     //   alert(selectedbutton);
-        //window.location("/importance.html" + "?categories=");
+
+    });
+
+    $("h5").click(function(e) {
+        var selectedbutton = $(this).parent().parent().attr("selectedbutton");
+        if (selectedbutton == "false") {
+            selectedbutton = "true";
+        } else {
+            selectedbutton = "false";
+        }
+        $(this).parent().parent().attr("selectedbutton", selectedbutton);
+
     });
 
     $("#topics-next-button").click(function(e) {
