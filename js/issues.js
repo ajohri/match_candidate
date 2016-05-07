@@ -65,7 +65,10 @@ $(document).ready(function() {
     document.getElementById("18").innerHTML += (guncontrol_num1 > guncontrol_num2) ? step : rick;
 
     for (i = 0 ; i < 9 ;i++){
-        if(document.getElementById(i).innerHTML == "0%")
+        if(document.getElementById(i).innerHTML == "0%"){
                 document.getElementById(i).innerHTML = "N/A"; 
+    document.getElementById(i).innerHTML = "N/A"; 
+
+    }
     }
 });
