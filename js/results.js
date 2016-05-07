@@ -23,7 +23,7 @@ $(document).ready(function() {
     //alert(answer_array);
 
     //Colbert overall percetage
-    var overall_num1 = -1;
+    var overall_num1 = 1;
 
     //Santorum overall percentage
     var overall_num2 = -1;
@@ -49,12 +49,12 @@ $(document).ready(function() {
     var immigration_num2 = -1;
     var guncontrol_num2 = -1;
 
-     if (overall_num1 > overall_num2) {
+     if (overall_num1 < overall_num2) {
          $("#colbert_wins").hide();
          $("#santorum_loses").hide();
     }
 
-    if (overall_num1 < overall_num2) {
+    if (overall_num1 > overall_num2) {
         $("#santorum_wins").hide();
         $("#colbert_loses").hide();
    }
