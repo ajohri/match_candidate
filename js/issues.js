@@ -8,9 +8,6 @@ $(document).ready(function() {
     colbert_results = colbert_results.split(',');
     santorum_results = santorum_results.split(',');
 
-    alert(colbert_results.toString());
-
-
     //alert(answer_array);
 
     //Colbert overall percetage
