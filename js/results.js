@@ -23,10 +23,10 @@ $(document).ready(function() {
     //alert(answer_array);
 
     //Colbert overall percetage
-    var overall_num1 = 73;
+    var overall_num1 = 25;
 
     //Santorum overall percentage
-    var overall_num2 = 25;
+    var overall_num2 = 73;
 
     //Issue percentages
     var poverty_num1 = -1;
@@ -70,7 +70,9 @@ $(document).ready(function() {
    document.getElementById('santorum_percentage').innerHTML=overall_num2 + "%";
    document.getElementById('santorum_percentage2').innerHTML=overall_num2 + "%";
    document.getElementById('oliver_percentage').innerHTML=oliver + "%";
+   document.getElementById('oliver_percentage2').innerHTML=oliver + "%";
    document.getElementById('jfk_percentage').innerHTML=jfk + "%";
+   document.getElementById('jfk_percentage2').innerHTML=jfk + "%";
 
     for (var i = 1; i < 36; i++) {
         if(answer_array[i] != null) {
