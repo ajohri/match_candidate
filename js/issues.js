@@ -63,4 +63,9 @@ $(document).ready(function() {
     document.getElementById("16").innerHTML += (climatechange_num1 > climatechange_num2) ? step : rick;
     document.getElementById("17").innerHTML += (immigration_num1 > immigration_num2) ? step : rick;
     document.getElementById("18").innerHTML += (guncontrol_num1 > guncontrol_num2) ? step : rick;
+
+    for (i = 0 ; i < 9 ;i++){
+        if(document.getElementById(i).innerHTML == "0%")
+                document.getElementById(i).innerHTML = "N/A"; 
+    }
 });
