@@ -59,15 +59,15 @@ $(document).ready(function() {
         $("#topic_climatechange").next().remove();
         $("#topic_climatechange").remove();
     }
-    if (guncontrol_param == null) {
-        $("#topic_guncontrol").next().next().remove();
-        $("#topic_guncontrol").next().remove();
-        $("#topic_guncontrol").remove();
-    }
     if (immigration_param == null) {
         $("#topic_immigration").next().next().remove();
         $("#topic_immigration").next().remove();
         $("#topic_immigration").remove();
+    }
+    if (guncontrol_param == null) {
+        $("#topic_guncontrol").next().next().remove();
+        $("#topic_guncontrol").next().remove();
+        $("#topic_guncontrol").remove();
     }
 
     $("#main-questions-container h2").next().hide();
@@ -131,15 +131,16 @@ $(document).ready(function() {
             $("#questions_climatechange").append(questions[i]["question"] + "<br><br>");
             $("#slider_climatechange").after("<p></p><br>");
         }
-        if (questions[i]["qtopic"] == "gun control") {
-            $("#slider_guncontrol").append(slidercode);
-            $("#questions_guncontrol").append(questions[i]["question"] + "<br><br>");
-            $("#slider_guncontrol").after("<p></p><br>");
-        }
+
         if (questions[i]["qtopic"] == "immigration") {
             $("#slider_immigration").append(slidercode);
             $("#questions_immigration").append(questions[i]["question"] + "<br><br>");
             $("#slider_immigration").after("<p></p><br>");
+        }
+        if (questions[i]["qtopic"] == "gun control") {
+            $("#slider_guncontrol").append(slidercode);
+            $("#questions_guncontrol").append(questions[i]["question"] + "<br><br>");
+            $("#slider_guncontrol").after("<p></p><br>");
         }
 
     }
@@ -159,18 +160,26 @@ $(document).ready(function() {
         }
     }
 
+    for (var i = 0; i <= 36; i++) {
+        param_array[i] = 0;
+    }
+
 
     $("#next-button").click(function(e) {
 
         var nexturl = "results.html" + "?" + "answers=";
 
-        param_array[0] = $("input").size();
+        // param_array[0] = $("input").size();
+        //Set to 0 else site bugs out due to double digits
+        param_array[0] = 0;
 
         $(".questions_slider").each(function(index, el) {
 
             param_array[$(this).attr("qid")] = $(this).attr("value");
 
         });
+
+
 
 
         sessionStorage.setItem('myArray', param_array);

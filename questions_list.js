@@ -143,42 +143,42 @@ var qlist = {
     }, {
         "question": "Should Obama's executive orders on gun sales be repealed?",
         "qtopic": "gun control",
-        "qid": 29,
+        "qid": 33,
         "qhelp": "Info on issue"
     }, {
         "question": "Should background checks on gun purchases be expanded?",
         "qtopic": "gun control",
-        "qid": 30,
+        "qid": 34,
         "qhelp": "Info on issue"
     }, {
         "question": "Should the goverment have the right to institute gun-free zones?",
         "qtopic": "gun control",
-        "qid": 31,
+        "qid": 35,
         "qhelp": "Info on issue"
     }, {
         "question": "Should the sale of assualt rifles be banned?",
         "qtopic": "gun control",
-        "qid": 32,
+        "qid": 36,
         "qhelp": "Info on issue"
     }, {
         "question": "Should existing illegal immigrants be granted a path to citizenship?",
         "qtopic": "immigration",
-        "qid": 33,
+        "qid": 29,
         "qhelp": "Info on issue"
     }, {
         "question": "Should we build a wall?",
         "qtopic": "immigration",
-        "qid": 34,
+        "qid": 30,
         "qhelp": "Info on issue"
     }, {
         "question": "Should the goverment expend resources on deportation raids?",
         "qtopic": "immigration",
-        "qid": 35,
+        "qid": 31,
         "qhelp": "Info on issue"
     }, {
         "question": "Should refugees fleeing from violence be accepted into the US?",
         "qtopic": "immigration",
-        "qid": 36,
+        "qid": 32,
         "qhelp": "Info on issue"
     }]
 }
