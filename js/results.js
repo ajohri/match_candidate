@@ -28,6 +28,7 @@ $(document).ready(function() {
     //Santorum overall percentage
     var overall_num2 = 0;
 
+
     //Issue percentages
     var poverty_num1 = 0;
     var education_num1 = 0;
