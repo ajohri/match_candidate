@@ -67,7 +67,7 @@ $(document).ready(function() {
     for (i = 0 ; i < 9 ;i++){
         if(document.getElementById(i).innerHTML == "0%"){
                 document.getElementById(i).innerHTML = "N/A"; 
-    document.getElementById(i).innerHTML = "N/A"; 
+    document.getElementById(i+10).innerHTML = "N/A"; 
 
     }
     }
